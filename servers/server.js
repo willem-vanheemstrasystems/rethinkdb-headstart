@@ -57,6 +57,10 @@ app.listen(8090);
 console.log("App listening on port 8090");
 
 // An API endpoint that lets the user fetch all of the fellowship members of the desired species.
+// The final path segment in the URL route represents a variable, 
+// which we pass to the filter command in the ReQL query in order to obtain just the desired documents. 
+// After the query completes, the application relays the JSON output to the user. 
+// If the query fails to complete, then the application will return status code 500 and provide the error.
 // Browse to e.g http://localhost:8090/fellowship/species/hobbit
 app.get("/fellowship/species/:species", function(req, res) {
   rethinkdb.connect().then(function(conn) {
