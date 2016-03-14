@@ -14,13 +14,17 @@ Follow the instructions from the site.
 RethinkDB is executed from the command line. 
 
 For Windows, you’ll need to start the Windows command shell.
+
 •Press Win + X and click “Command Prompt”; or
+
 •Open the Start Menu, click “Run,” and type “cmd” ENTER
 
 Use the cd command to go to the directory that you unpacked rethinkdb.exe in.
 
+'''
 C:\Users\Me\>cd rethinkdb
 C:\Users\Me\rethinkdb\>
+''''
 
 Then, you can start RethinkDB with its default options.
 
