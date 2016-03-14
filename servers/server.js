@@ -26,6 +26,10 @@ rethinkdb.table("fellowship").insert([
 ])
 
 // Perform a simple query and display the output.
+// The connect method establishes a connection to RethinkDB. 
+// It returns a connection handle, which you provide to the run command when you want to execute a query. 
+// The example below finds all of the hobbits in the fellowship table and then displays their respective JSON documents in your console. 
+// It uses promises to handle the asynchronous flow of execution and to ensure that the connection is properly closed when the operation completes.
 rethinkdb.connect().then(function(conn) {
   return rethinkdb.db("test").table("fellowship")
           .filter({species: "hobbit"}).run(conn)
@@ -40,6 +44,8 @@ rethinkdb.connect().then(function(conn) {
 .error(function(err) {
   console.log("Failed:", err);
 });
+
+
 
 
 //query.run().then(function(result) {
