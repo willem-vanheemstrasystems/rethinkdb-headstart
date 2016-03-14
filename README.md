@@ -56,5 +56,9 @@ C:\Users\Me\rethinkdb\>rethinkdb.exe -n myservername
 An advanced Node.js driver for RethinkDB with a connection pool, support for streams etc. 
 See https://github.com/neumino/rethinkdbdash
 
+Tutorials:
+
+- An introduction to building realtime apps with RethinkDB (https://jaxenter.com/building-realtime-apps-rethinkdb-115254.html)
+
 
 
