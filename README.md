@@ -29,6 +29,8 @@ C:\Users\Me\rethinkdb\>
 
 Then, you can start RethinkDB with its default options.
 
+````
 C:\Users\Me\rethinkdb\>rethinkdb.exe
+````
 
 You can also use any of the command line options to control configuration (as well as specify a configuration file).
