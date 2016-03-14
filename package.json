@@ -2,7 +2,7 @@
   "name": "rethinkdb-headstart",
   "version": "1.0.0",
   "description": "RethinkDB - Headstart",
-  "main": "index.js",
+  "main": "servers/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
