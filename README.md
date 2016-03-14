@@ -55,7 +55,7 @@ C:\Users\Me\rethinkdb\>rethinkdb.exe -n myservername
 
 By default the RethinkDB administrative web console runs on localhost, port 8080. After having started RethinkDB, open a web browser window and surf to http://localhost:8080
 
-You can type RethinkDB queries into the text field on the **Data Explorer** tab and run them to see the output.
+You can type RethinkDB queries (in **ReQL**) into the text field on the **Data Explorer** tab and run them to see the output.
 
 Here is how you add a table to the testdatabase:
 
@@ -94,6 +94,7 @@ See https://github.com/neumino/rethinkdbdash
 
 Tutorials:
 
+- An introduction to ReQL (http://rethinkdb.com/docs/introduction-to-reql/)
 - An introduction to building realtime apps with RethinkDB (https://jaxenter.com/building-realtime-apps-rethinkdb-115254.html)
 
 
