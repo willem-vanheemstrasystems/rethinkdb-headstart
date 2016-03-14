@@ -1,10 +1,11 @@
 // See also https://github.com/neumino/rethinkdbdash
 
 var rethinkdb = require('rethinkdbdash')({
-  pool: false,
+//  pool: false, // as soon as you execute the module, you will create a default connection pool (except if you pass  {pool: false} 
   cursor: true,
   servers: [{host: 'localhost', port: 8080}] // Use the values of your running RethinkDB instance
 }); // You need to execute the module when you import it.
+
 // With the official driver:
 // var r = require('rethinkdb');
 

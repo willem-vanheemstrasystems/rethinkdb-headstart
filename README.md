@@ -3,6 +3,10 @@ RethinkDB - Headstart
 
 Based on RethinkDB
 
+Watch videos here https://www.youtube.com/user/RethinkDB
+
+- Data Modeling in RethinkDB (https://www.youtube.com/watch?v=vJtDNRsUozk)
+
 See also https://rethinkdb.com/docs/guide/javascript/
 
 ##Install RethinkDB 
