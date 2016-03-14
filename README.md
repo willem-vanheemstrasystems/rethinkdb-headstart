@@ -51,6 +51,10 @@ To specify a server name:
 C:\Users\Me\rethinkdb\>rethinkdb.exe -n myservername
 ````
 
+###Administrative web console
+
+By default the RethinkDB administrative web console runs on localhost, port 8080. After having started RethinkDB, open a web browser window and surf to http://localhost:8080
+
 ###Node.js Driver for RethinkDB
 
 An advanced Node.js driver for RethinkDB with a connection pool, support for streams etc. 
