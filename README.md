@@ -21,11 +21,11 @@ For Windows, you’ll need to start the Windows command shell.
 
 Use the cd command to go to the directory that you unpacked rethinkdb.exe in.
 
-''''
+````
 C:\Users\Me\>cd rethinkdb
 
 C:\Users\Me\rethinkdb\>
-''''
+````
 
 Then, you can start RethinkDB with its default options.
 
