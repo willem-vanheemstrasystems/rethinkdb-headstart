@@ -1,0 +1,19 @@
+{
+  "name": "rethinkdb-headstart",
+  "version": "1.0.0",
+  "description": "RethinkDB - Headstart",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willem-vanheemstrasystems/rethinkdb-headstart.git"
+  },
+  "author": "Willem van Heemstra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/willem-vanheemstrasystems/rethinkdb-headstart/issues"
+  },
+  "homepage": "https://github.com/willem-vanheemstrasystems/rethinkdb-headstart#readme"
+}

@@ -34,3 +34,23 @@ C:\Users\Me\rethinkdb\>rethinkdb.exe
 ````
 
 You can also use any of the command line options to control configuration (as well as specify a configuration file).
+
+To start with a specific data directory:
+
+````
+C:\Users\Me\rethinkdb\>rethinkdb.exe -d C:\Users\Me\rethinkdb\mydata\
+````
+
+To specify a server name:
+
+````
+C:\Users\Me\rethinkdb\>rethinkdb.exe -n myservername
+````
+
+###Node.js Driver for RethinkDB
+
+An advanced Node.js driver for RethinkDB with a connection pool, support for streams etc. 
+See https://github.com/neumino/rethinkdbdash
+
+
+
