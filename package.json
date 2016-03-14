@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/willem-vanheemstrasystems/rethinkdb-headstart/issues"
   },
-  "homepage": "https://github.com/willem-vanheemstrasystems/rethinkdb-headstart#readme"
+  "homepage": "https://github.com/willem-vanheemstrasystems/rethinkdb-headstart#readme",
+  "dependencies": {
+    "rethinkdb": "^2.2.2"
+  }
 }

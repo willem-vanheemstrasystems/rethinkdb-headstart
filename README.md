@@ -89,10 +89,16 @@ For more see the tutorial 'An introduction to building ...' listed below.
 
 ###Node.js Driver for RethinkDB
 
+===SKIP THIS DRIVER FOR NOW ===
 An advanced Node.js driver for RethinkDB with a connection pool, support for streams etc. 
 See https://github.com/neumino/rethinkdbdash
+===============================
 
-Tutorials:
+The rethinkdb module in npm provides RethinkDB’s official JavaScript client driver. You can use it in a Node.js application to compose and send queries.
+
+
+
+###Tutorials
 
 - An introduction to ReQL (http://rethinkdb.com/docs/introduction-to-reql/)
 - An introduction to building realtime apps with RethinkDB (https://jaxenter.com/building-realtime-apps-rethinkdb-115254.html)
