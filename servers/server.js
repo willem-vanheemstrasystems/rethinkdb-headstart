@@ -1,3 +1,8 @@
+/* 
+ * server.js 
+ */
+
+var express = require('express');
 // See also https://github.com/neumino/rethinkdbdash
 
 //var rethinkdb = require('rethinkdbdash')({
@@ -8,6 +13,8 @@
 
 // With the official driver:
 var rethinkdb = require('rethinkdb');
+
+var app = express();
 
 // Create the table in the test database.
 rethinkdb.db("test").tableCreate("fellowship")
@@ -45,21 +52,19 @@ rethinkdb.connect().then(function(conn) {
   console.log("Failed:", err);
 });
 
+app.listen(8090);
 
+console.log("App listening on port 8090");
 
-
-//query.run().then(function(result) {
-//  console.log(result);
-//});
-
-//rethinkdb.db('test').table('data').run().then(function(error, result) {
-//	console.log(result);
-//});
-
-
-/*
-rethinkdb.db('test').tableCreate('authors').run().then(function(err, result) {
-    if (err) throw err;
-    console.log(JSON.stringify(result, null, 2));
+// An API endpoint that lets the user fetch all of the fellowship members of the desired species.
+// Browse to e.g http://localhost:8090/fellowship/species/hobbit
+app.get("/fellowship/species/:species", function(req, res) {
+  rethinkdb.connect().then(function(conn) {
+    return rethinkdb.db("test").table("fellowship")
+            .filter({species: req.params.species}).run(conn)
+        .finally(function() { conn.close(); });
+  })
+  .then(function(cursor) { return cursor.toArray(); })
+  .then(function(output) { res.json(output); })
+  .error(function(err) { res.status(500).json({err: err}); })
 });
-*/
