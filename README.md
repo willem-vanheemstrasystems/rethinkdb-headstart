@@ -55,6 +55,38 @@ C:\Users\Me\rethinkdb\>rethinkdb.exe -n myservername
 
 By default the RethinkDB administrative web console runs on localhost, port 8080. After having started RethinkDB, open a web browser window and surf to http://localhost:8080
 
+You can type RethinkDB queries into the text field on the **Data Explorer** tab and run them to see the output.
+
+Here is how you add a table to the testdatabase:
+
+````
+r.db("test").tableCreate("fellowship")
+````
+
+In addition, here is how you add JSON documents to the newly created table:
+
+````
+r.table("fellowship").insert([
+  { name: "Frodo", species: "hobbit" },
+  { name: "Sam", species: "hobbit" },
+  { name: "Merry", species: "hobbit" },
+  { name: "Pippin", species: "hobbit" },
+  { name: "Gandalf", species: "istar" },
+  { name: "Legolas", species: "elf" },
+  { name: "Gimili", species: "dwarf" },
+  { name: "Aragorn", species: "human" },
+  { name: "Boromir", species: "human" }
+])
+````
+
+Finally, here is how you fetch the fellowship's hobbits:
+
+````
+r.table("fellowship").filter({species:"hobbit"})
+````
+
+For more see the tutorial 'An introduction to building ...' listed below.
+
 ###Node.js Driver for RethinkDB
 
 An advanced Node.js driver for RethinkDB with a connection pool, support for streams etc. 
